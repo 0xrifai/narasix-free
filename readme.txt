@@ -1,4 +1,4 @@
-=== Narasix Themes ===
+=== Narasix Free Themes ===
 Contributors: Hidunks
 Author URI: https://hidunks.com
 Theme URI: https://narasix.hidunks.com
