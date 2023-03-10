@@ -13,7 +13,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/image',
 			array(
 				'name'  => 'narasix-border',
-				'label' => esc_html__( 'Borders', 'narasix' ),
+				'label' => esc_html__( 'Borders', 'narasix-free' ),
 			)
 		);
 	}

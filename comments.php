@@ -30,7 +30,7 @@ if ( post_password_required() ) {
 					'There are %1$s comments',
 					$comments_number,
 					'comments title',
-					'narasix'
+					'narasix-free'
 				) ),
 				number_format_i18n( $comments_number )
 			);
@@ -44,14 +44,14 @@ if ( post_password_required() ) {
 					'max_depth'   => 5,
 					'style'       => 'ol',
 					'short_ping'  => true,
-					'reply_text'  => esc_html__( 'Reply', 'narasix' ),
+					'reply_text'  => esc_html__( 'Reply', 'narasix-free' ),
 				) );
 			?>
 		</ol>
 
 		<?php the_comments_pagination( array(
-			'prev_text' => '<span class="screen-reader-text">' . esc_html__( 'Previous', 'narasix' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . esc_html__( 'Next', 'narasix' ) . '</span>',
+			'prev_text' => '<span class="screen-reader-text">' . esc_html__( 'Previous', 'narasix-free' ) . '</span>',
+			'next_text' => '<span class="screen-reader-text">' . esc_html__( 'Next', 'narasix-free' ) . '</span>',
 		) );
 
 	endif; // Check for have_comments().
@@ -59,7 +59,7 @@ if ( post_password_required() ) {
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'narasix' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'narasix-free' ); ?></p>
 	<?php
 	endif;
 

@@ -13,13 +13,13 @@
 
         <?php
         wp_link_pages( array(
-          'before'      		=> '<div class="nsix-post-pagination font-meta">' . '<span class="nsix-post-pagination-heading">' . esc_html__( 'Pages:', 'narasix' ) . '</span>',
+          'before'      		=> '<div class="nsix-post-pagination font-meta">' . '<span class="nsix-post-pagination-heading">' . esc_html__( 'Pages:', 'narasix-free' ) . '</span>',
           'after'       		=> '</div>',
-          'linkbefore'      		=> '<span class="nsix-post-pagination-item">' . esc_html__( 'Pages:', 'narasix' ),
+          'linkbefore'      		=> '<span class="nsix-post-pagination-item">' . esc_html__( 'Pages:', 'narasix-free' ),
           'linkafter'       		=> '</span>',
           'next_or_number'	=> 'next_and_number',
-          'nextpagelink'     	=> esc_html__( 'Next page', 'narasix' ),
-              'previouspagelink' 	=> esc_html__( 'Previous page', 'narasix' ),
+          'nextpagelink'     	=> esc_html__( 'Next page', 'narasix-free' ),
+              'previouspagelink' 	=> esc_html__( 'Previous page', 'narasix-free' ),
         ) );
         ?>
       </div>

@@ -17,7 +17,7 @@
 <body <?php body_class('antialiased'); ?>>
 <div id="nsix-site">
 	<div class="site-container">
-		<a class="skip-link sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'narasix' ); ?></a>
+		<a class="skip-link sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'narasix-free' ); ?></a>
 
 		<header id="masthead" class="site-header">
 			<?php get_template_part( 'template-parts/header/header-layout' ); ?>

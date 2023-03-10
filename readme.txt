@@ -8,7 +8,7 @@ Tested up to: 6.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: narasix
+Text Domain: narasix-free
 Tags: two-columns, right-sidebar, custom-background, custom-logo, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, blog, news,
 
 Narasix is a WordPress Blog Theme for personal use.

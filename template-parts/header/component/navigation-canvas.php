@@ -15,7 +15,7 @@
 			?>
 		</div>
 
-		<a href="" class="offcanvas-close pb-[5px] pt-[2px] px-[10px] bg-yellow-500 rounded-md js-nsix-offcanvas-close" role="button" aria-label="<?php echo esc_attr( 'Close', 'narasix' ); ?>">
+		<a href="" class="offcanvas-close pb-[5px] pt-[2px] px-[10px] bg-yellow-500 rounded-md js-nsix-offcanvas-close" role="button" aria-label="<?php echo esc_attr( 'Close', 'narasix-free' ); ?>">
 			<?php echo narasix_svg_icon( array( 'icon' => 'x-circle', 'class' => 'icons-md' ) ) ;?>
 		</a>
 	</header>

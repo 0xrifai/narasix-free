@@ -22,7 +22,7 @@
 
       </form>
       <div class="py-3 px-4">
-        <h3 class="text-charcoal-800 dark:text-charcoal-100 font-semibold"><?php echo esc_html__( 'Result', 'narasix' ); ?></h3>
+        <h3 class="text-charcoal-800 dark:text-charcoal-100 font-semibold"><?php echo esc_html__( 'Result', 'narasix-free' ); ?></h3>
       </div>
       <div class="relative overflow-auto">
         <div class="relative p-4 mx-auto h-[23rem] md:h-[20rem] md:mb-3 overflow-auto">

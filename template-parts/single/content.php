@@ -26,13 +26,13 @@ $classes = array(
 
       <?php
       wp_link_pages( array(
-        'before'      		  => '<div class="nsix-post-pagination font-meta">' . '<span class="nsix-post-pagination-heading">' . esc_html__( 'Pages:', 'narasix' ) . '</span>',
+        'before'      		  => '<div class="nsix-post-pagination font-meta">' . '<span class="nsix-post-pagination-heading">' . esc_html__( 'Pages:', 'narasix-free' ) . '</span>',
         'after'       		  => '</div>',
-        'linkbefore'      	=> '<span class="nsix-post-pagination-item">' . esc_html__( 'Pages:', 'narasix' ),
+        'linkbefore'      	=> '<span class="nsix-post-pagination-item">' . esc_html__( 'Pages:', 'narasix-free' ),
         'linkafter'       	=> '</span>',
         'next_or_number'	  => 'next_and_number',
-        'nextpagelink'     	=> esc_html__( 'Next page', 'narasix' ),
-        'previouspagelink' 	=> esc_html__( 'Previous page', 'narasix' ),
+        'nextpagelink'     	=> esc_html__( 'Next page', 'narasix-free' ),
+        'previouspagelink' 	=> esc_html__( 'Previous page', 'narasix-free' ),
       ) );
     ?>
     
@@ -43,7 +43,7 @@ $classes = array(
           if ( $post_tags ) {
           ?>
           <div class="flex items-center space-x-3">
-            <h5 class="font-heading !text-lg whitespace-nowrap"><?php echo esc_html__( 'Tags :', 'narasix' ) ?></h5>
+            <h5 class="font-heading !text-lg whitespace-nowrap"><?php echo esc_html__( 'Tags :', 'narasix-free' ) ?></h5>
             <?php
               narasix_post_tags();
             ?>
@@ -57,8 +57,8 @@ $classes = array(
     <div class="mt-6">
       <?php
       the_post_navigation( array(
-        'prev_text' => '<div aria-hidden="true" class="nav-subtitle font-meta">' . esc_html__( 'Previous', 'narasix' ) . '</div><h4 class="nav-title">%title</h4>',
-        'next_text' => '<div aria-hidden="true" class="nav-subtitle font-meta">' . esc_html__( 'Next', 'narasix' ) . '</div><h4 class="nav-title">%title</h4>',
+        'prev_text' => '<div aria-hidden="true" class="nav-subtitle font-meta">' . esc_html__( 'Previous', 'narasix-free' ) . '</div><h4 class="nav-title">%title</h4>',
+        'next_text' => '<div aria-hidden="true" class="nav-subtitle font-meta">' . esc_html__( 'Next', 'narasix-free' ) . '</div><h4 class="nav-title">%title</h4>',
       ) );
       ?>
     </div>

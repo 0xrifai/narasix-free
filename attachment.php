@@ -59,7 +59,7 @@ get_header();
 							?>
 								<div class="mt-6">
 									<?php
-										echo esc_html__( 'Download', 'narasix' ) . ': ';
+										echo esc_html__( 'Download', 'narasix-free' ) . ': ';
 										$images = array();
 										$image_sizes = array(
 											'narasix_sm',

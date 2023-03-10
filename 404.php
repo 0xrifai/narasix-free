@@ -5,7 +5,7 @@
  */
 
 // Get options.
-$page_404_title = narasix_get_option( 'page_404_title', esc_html__( 'Page not found', 'narasix' ) );
+$page_404_title = narasix_get_option( 'page_404_title', esc_html__( 'Page not found', 'narasix-free' ) );
 $page_404_body_text = narasix_get_option( 'page_404_body_text', 'The page you were looking for could not be found.<br/> It might have been removed, renamed, or did not exist in the first place.' );
 
 get_header();

@@ -43,7 +43,7 @@ $post_time = get_the_time( get_option( 'date_format' ) );
 			<div class="font-meta inline-flex w-[70%] items-center">
 				<span class="inline-flex items-center space-x-3 whitespace-nowrap dot-s">
 					<span class="author-avatar">
-						<?php echo get_avatar( get_the_author_meta( 'ID' ), '32', '', esc_html__( 'avatar', 'narasix' ) ); ?>
+						<?php echo get_avatar( get_the_author_meta( 'ID' ), '32', '', esc_html__( 'avatar', 'narasix-free' ) ); ?>
 					</span>
 					<?php the_author_posts_link(); ?>
 				</span>

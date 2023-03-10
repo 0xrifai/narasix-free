@@ -9,7 +9,7 @@ $menu_class = 'flex flex-wrap space-x-4 text-center';
 
 <div class="mt-6 py-6 flex flex-col items-center justify-between space-y-3 md:flex-row">
   <?php get_template_part( 'template-parts/footer/component/footer-branding' ); ?>
-  <nav aria-label="<?php esc_attr_e( 'Footer Menu', 'narasix' ); ?>">
+  <nav aria-label="<?php esc_attr_e( 'Footer Menu', 'narasix-free' ); ?>">
       <?php
       wp_nav_menu( array(
       'theme_location' => 'footer',
@@ -26,6 +26,6 @@ $menu_class = 'flex flex-wrap space-x-4 text-center';
       $narasix_theme = wp_get_theme();
     ?>
 
-    &copy; <?php echo esc_html( date("o") ); ?> <a href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html( get_bloginfo('name') ); ?></a> - <a target="_blank" href="<?php echo esc_url( $narasix_theme->get( 'AuthorURI' ) ); ?>"><?php esc_html_e('WordPress Theme', 'narasix'); ?></a> <?php esc_html_e('by', 'narasix'); ?> <a target="_blank" href="<?php echo esc_url( $narasix_theme->get( 'AuthorURI' ) ); ?>"><?php esc_html_e('Hidunks', 'narasix'); ?></a>
+    &copy; <?php echo esc_html( date("o") ); ?> <a href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html( get_bloginfo('name') ); ?></a> - <a target="_blank" href="<?php echo esc_url( $narasix_theme->get( 'AuthorURI' ) ); ?>"><?php esc_html_e('WordPress Theme', 'narasix-free'); ?></a> <?php esc_html_e('by', 'narasix-free'); ?> <a target="_blank" href="<?php echo esc_url( $narasix_theme->get( 'AuthorURI' ) ); ?>"><?php esc_html_e('Hidunks', 'narasix-free'); ?></a>
   </div><!-- .site-info -->
 </div>

@@ -48,7 +48,7 @@ get_header();
 								echo '<p style="padding: 32px;background-color:#f5f5f5;">';
 								printf(
 									/* translators: 1: sidebar's name */
-								esc_html__( 'Place widgets in %1$s widget area to make them appear here', 'narasix' ), $sidebar_name
+								esc_html__( 'Place widgets in %1$s widget area to make them appear here', 'narasix-free' ), $sidebar_name
 								);
 								echo '</p>';
 							}

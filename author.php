@@ -35,7 +35,7 @@ get_header();
 								if ( $author_post_counts > 0 ) {
 								?>
 									<span class="w-full">
-										<?php echo esc_html__( 'Posts created: ', 'narasix' ) ?><?php echo esc_html( $author_post_counts ); ?>
+										<?php echo esc_html__( 'Posts created: ', 'narasix-free' ) ?><?php echo esc_html( $author_post_counts ); ?>
 									</span>
 								<?php
 								}
@@ -60,7 +60,7 @@ get_header();
 							if ( have_posts() ) {
 								narasix_post_listing( $post_listing_args );
 							} else {
-								echo esc_html__( 'Nothing Found', 'narasix' );
+								echo esc_html__( 'Nothing Found', 'narasix-free' );
 							}
 						?>
 						</section>

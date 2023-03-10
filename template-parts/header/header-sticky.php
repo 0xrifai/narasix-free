@@ -32,10 +32,10 @@
     </div>
     <div>
       <div class="flex items-center space-x-4">
-        <button onclick="toggleDarkMode()" class="active:scale-95 mt-[3px]" aria-label="<?php echo esc_attr( 'Darkmode Toggle Button', 'narasix' ) ?>">
+        <button onclick="toggleDarkMode()" class="active:scale-95 mt-[3px]" aria-label="<?php echo esc_attr( 'Darkmode Toggle Button', 'narasix-free' ) ?>">
           <?php echo narasix_svg_icon( array( 'icon' => 'darkmode' ) ) ;?>
         </button>
-        <button class="modal-open" type="button" data-modal="#nsix-search-modal" aria-label="<?php echo esc_attr( 'Search', 'narasix' ) ?>">
+        <button class="modal-open" type="button" data-modal="#nsix-search-modal" aria-label="<?php echo esc_attr( 'Search', 'narasix-free' ) ?>">
           <?php echo narasix_svg_icon( array( 'icon' => 'search' ) ) ;?>
         </button>
       </div>

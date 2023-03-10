@@ -13,7 +13,7 @@
       </div>
 
       <div class="py-3 px-4">
-        <h3 class="mb-3 text-charcoal-800 dark:text-charcoal-100"><?php echo esc_html__( 'Share', 'narasix' ) ?></h3>
+        <h3 class="mb-3 text-charcoal-800 dark:text-charcoal-100"><?php echo esc_html__( 'Share', 'narasix-free' ) ?></h3>
   
         <div id="nx_share">
           <ul class="nx-carrousel-flexbox space-x-4">

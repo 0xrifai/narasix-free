@@ -19,7 +19,7 @@ if ( !function_exists( 'narasix_setup' ) ) {
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 */
-		load_theme_textdomain( 'narasix', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'narasix-free', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -135,9 +135,9 @@ if ( !function_exists( 'narasix_setup' ) ) {
 if ( !function_exists( 'narasix_menus' ) ) {
 	function narasix_menus() {
 		$locations = array(
-			'site-header'  	=> esc_html__( 'Site Header', 'narasix' ),
-			'offcanvas'   			=> esc_html__( 'Off Canvas', 'narasix' ),
-			'footer'   			=> esc_html__( 'Footer', 'narasix' ),
+			'site-header'  	=> esc_html__( 'Site Header', 'narasix-free' ),
+			'offcanvas'   			=> esc_html__( 'Off Canvas', 'narasix-free' ),
+			'footer'   			=> esc_html__( 'Footer', 'narasix-free' ),
 		);
 
 		register_nav_menus( $locations );
@@ -150,7 +150,7 @@ if ( !function_exists( 'narasix_menus' ) ) {
  */
 if ( !function_exists( 'narasix_skip_link' ) ) {
 	function narasix_skip_link() {
-		echo '<a class="skip-link sr-only" href="#site-content">' . esc_html__( 'Skip to the content', 'narasix' ) . '</a>';
+		echo '<a class="skip-link sr-only" href="#site-content">' . esc_html__( 'Skip to the content', 'narasix-free' ) . '</a>';
 	}
 	add_action( 'wp_body_open', 'narasix_skip_link', 5 );
 }
@@ -175,9 +175,9 @@ if ( !function_exists( 'narasix_sidebar_registration' ) ) {
 			array_merge(
 				$shared_args,
 				array(
-					'name'          => esc_html__( 'Default Sidebar', 'narasix' ),
+					'name'          => esc_html__( 'Default Sidebar', 'narasix-free' ),
 					'id'          => 'nsix-default',
-					'description'   => esc_html__( 'Add widgets here to display them in your sidebar on blog posts and archive pages.', 'narasix' ),
+					'description'   => esc_html__( 'Add widgets here to display them in your sidebar on blog posts and archive pages.', 'narasix-free' ),
 				)
 			)
 		);
@@ -193,7 +193,7 @@ if ( !function_exists( 'narasix_scripts' ) ) {
     $theme_version = wp_get_theme()->get( 'Version' );
 
 		// Theme stylesheet.
-		wp_enqueue_style( 'narasix', get_template_directory_uri() . '/style.css', array(), $theme_version );
+		wp_enqueue_style( 'narasix-free', get_template_directory_uri() . '/style.css', array(), $theme_version );
 
 		// Tailwind stylesheet.
 		wp_enqueue_style( 'tailwind', get_template_directory_uri() . '/vendors/tailwind/tailwind.css', array(), '4.5.3' );
@@ -417,7 +417,7 @@ if ( !function_exists( 'narasix_human_datetime' ) ) {
 		$time_now = date( 'U' );
 
 		if ( $post_time > $time_now - ( 60 * 60 * 24 * $day_limit ) ) {
-			$human_time = sprintf( esc_html__( '%s ago', 'narasix'), human_time_diff( $post_time, current_time( 'timestamp' ) ) );
+			$human_time = sprintf( esc_html__( '%s ago', 'narasix-free'), human_time_diff( $post_time, current_time( 'timestamp' ) ) );
 		} else {
 			$human_time = get_the_date();
 		}
@@ -436,9 +436,9 @@ if ( !function_exists( 'narasix_human_modified_datetime' ) ) {
 		$time_now = date( 'U' );
 
 		if ( $post_time > $time_now - ( 60 * 60 * 24 * $day_limit ) ) {
-			$human_time = esc_html__( 'Updated', 'narasix' ) . ' ' . sprintf( esc_html__( '%s ago', 'narasix'), human_time_diff( $post_time, current_time( 'timestamp' ) ) );
+			$human_time = esc_html__( 'Updated', 'narasix-free' ) . ' ' . sprintf( esc_html__( '%s ago', 'narasix-free'), human_time_diff( $post_time, current_time( 'timestamp' ) ) );
 		} else {
-			$human_time = esc_html__( 'Updated on', 'narasix' ) . ' ' . get_the_modified_date();
+			$human_time = esc_html__( 'Updated on', 'narasix-free' ) . ' ' . get_the_modified_date();
 		}
 
 		return esc_html( $human_time );
@@ -487,7 +487,7 @@ if ( !function_exists('narasix_post_categories') ) {
 				<span class="font-meta space-x-1.5 content-category whitespace-nowrap">
 					<a class="post-category space-x-0.5 text-[14px]" 
 						href="<?php echo esc_url( get_category_link( $category->term_id ) ); ?>" 
-						title="<?php echo esc_attr( sprintf( esc_html__( 'View all posts in %s', 'narasix' ), $category->name ) ) ?>" 
+						title="<?php echo esc_attr( sprintf( esc_html__( 'View all posts in %s', 'narasix-free' ), $category->name ) ) ?>" 
 						rel="tag" >
 						<?php echo esc_html( $category->name ); ?>
 					</a>
@@ -511,7 +511,7 @@ if ( !function_exists('narasix_post_categories_single') ) {
 			<ul class="inline-flex list-none">
 			<?php foreach ( $categories as $category ) { ?>
 				<li class="list-category">
-					<a class="hover:underline whitespace-nowrap" href="<?php echo esc_url( get_category_link( $category->term_id ) ); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'View all posts in %s', 'narasix' ), $category->name ) ) ?>" rel="tag">
+					<a class="hover:underline whitespace-nowrap" href="<?php echo esc_url( get_category_link( $category->term_id ) ); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'View all posts in %s', 'narasix-free' ), $category->name ) ) ?>" rel="tag">
 						<?php echo esc_html( $category->name ); ?>
 					</a>
 				</li>
@@ -677,9 +677,9 @@ if ( !function_exists('narasix_post_comments_bubble') ) {
 		$comments_number = get_comments_number( $post_id );
 		$comments_link = get_comments_link( $post_id );
 		if ( $comments_number != '0' ) {
-			$link_title = sprintf( _nx( '%1$s comment', '%1$s comments', $comments_number, 'comments title', 'narasix' ), number_format_i18n( $comments_number ) );
+			$link_title = sprintf( _nx( '%1$s comment', '%1$s comments', $comments_number, 'comments title', 'narasix-free' ), number_format_i18n( $comments_number ) );
 		} else {
-			$link_title = esc_html__('Comment', 'narasix');
+			$link_title = esc_html__('Comment', 'narasix-free');
 		} ?>
 		<a href="<?php echo esc_url( $comments_link ); ?>" title="<?php echo esc_attr( $link_title ); ?>" class="comments-number-bubble navigation-font">
 			<?php echo esc_html( $comments_number ); ?>
@@ -720,8 +720,8 @@ if ( ! function_exists( 'narasix_pagination' ) ) {
 						'total' => $args['max_pages'],
 						'current' => $current,
 						'mid_size' 	=> 1,
-						'prev_text' => '<span class="sr-only">' . esc_html__( 'Previous page', 'narasix' ) . '</span><span class="nsix-pagination-circle"><svg width="48px" height="48px" viewBox="0 0 100 100"><circle class="anicircle" cx="50" cy="50" r="48"/></svg></span>' . narasix_svg_icon( array( 'icon' => 'arrow-left', 'class' => 'icons-md', 'echo' => false ) ),
-				    	'next_text' => '<span class="sr-only">' . esc_html__( 'Next page', 'narasix' ) . '</span><span class="nsix-pagination-circle"><svg width="48px" height="48px" viewBox="0 0 100 100"><circle class="anicircle" cx="50" cy="50" r="48"/></svg></span>' . narasix_svg_icon( array( 'icon' => 'arrow-right', 'class' => 'icons-md', 'echo' => false ) ),
+						'prev_text' => '<span class="sr-only">' . esc_html__( 'Previous page', 'narasix-free' ) . '</span><span class="nsix-pagination-circle"><svg width="48px" height="48px" viewBox="0 0 100 100"><circle class="anicircle" cx="50" cy="50" r="48"/></svg></span>' . narasix_svg_icon( array( 'icon' => 'arrow-left', 'class' => 'icons-md', 'echo' => false ) ),
+				    	'next_text' => '<span class="sr-only">' . esc_html__( 'Next page', 'narasix-free' ) . '</span><span class="nsix-pagination-circle"><svg width="48px" height="48px" viewBox="0 0 100 100"><circle class="anicircle" cx="50" cy="50" r="48"/></svg></span>' . narasix_svg_icon( array( 'icon' => 'arrow-right', 'class' => 'icons-md', 'echo' => false ) ),
 					);
 
 					?>
@@ -944,7 +944,7 @@ if ( !function_exists( 'narasix_post_tags' ) ) {
 			foreach ( $tags as $tag ) {
 			?>
 				<li>
-					<a class="font-meta inline-block text-sm py-1 px-4 border rounded-xl whitespace-nowrap" href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'View all posts in %s', 'narasix' ), $tag->name ) ) ?>" rel="tag"><?php echo esc_html( $tag->name ); ?></a>
+					<a class="font-meta inline-block text-sm py-1 px-4 border rounded-xl whitespace-nowrap" href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'View all posts in %s', 'narasix-free' ), $tag->name ) ) ?>" rel="tag"><?php echo esc_html( $tag->name ); ?></a>
 				</li>
 			<?php
 			}

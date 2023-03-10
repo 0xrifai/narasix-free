@@ -19,7 +19,7 @@
 	} ?>
 	<?php get_template_part( 'template-parts/header/component/header-search' ); ?>
 	
-	<button class="js-nsix-back-top-btn hidden lg:block bg-charcoal-100 dark:bg-charcoal-700 shadow-lg nsix-back-to-top"><span class="sr-only"><?php echo esc_html__( 'Back to top', 'narasix' ); ?></span><?php echo narasix_svg_icon( array( 'icon' => 'arrow-up' ) ); ?></button>
+	<button class="js-nsix-back-top-btn hidden lg:block bg-charcoal-100 dark:bg-charcoal-700 shadow-lg nsix-back-to-top"><span class="sr-only"><?php echo esc_html__( 'Back to top', 'narasix-free' ); ?></span><?php echo narasix_svg_icon( array( 'icon' => 'arrow-up' ) ); ?></button>
 </div><!-- .site -->
 
 <div class="overlay modal-close"></div>
